@@ -174,6 +174,7 @@ class ViewController: NSViewController, DragDropImageViewDelegate {
                         
                         openSheet.beginSheetModalForWindow(self.view.window!, completionHandler: { result in
                             if result == NSFileHandlingPanelOKButton {
+                                //TODO: use NSOperationQueue/NSOperation to do tasks for each file in files?
                                 if let finalDestinationURL = openSheet.URL {
                                     self.displayProgress()
                                     self.parseXcodeProject(files, destinationURL:finalDestinationURL)
