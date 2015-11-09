@@ -34,7 +34,7 @@ class ViewController: NSViewController, DragDropImageViewDelegate {
         }
     }
     
-    func processStoryboard(file: String, finalPath:String) {
+    func processXML(file: String, finalPath:String) {
         guard let
             data = NSData(contentsOfFile: file)
             else { return }
@@ -118,11 +118,11 @@ class ViewController: NSViewController, DragDropImageViewDelegate {
                     if file.pathExtension == "storyboard" {
                         let filePath = "\(project)/\(file)"
                         NSLog("storyboarde filePath:\(filePath)")
-                        processStoryboard(filePath, finalPath: destinationURL.path!)
+                        processXML(filePath, finalPath: destinationURL.path!)
                     } else if file.pathExtension == "xib" {
                         let filePath = "\(project)/\(file)"
                         NSLog("xib filePath:\(filePath)")
-                        
+                        processXML(filePath, finalPath: destinationURL.path!)
                     }
                 }
             } else {
