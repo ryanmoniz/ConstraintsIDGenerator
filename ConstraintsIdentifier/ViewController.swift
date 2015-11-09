@@ -8,13 +8,23 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, DragDropImageViewDelegate {
 
+    @IBOutlet weak var dragDropImageView: DragDropImageView!
+    
+    var progressController: ProgressViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+        self.progressController = ProgressViewController()
+
+        self.dragDropImageView.delegate = self
+    
+        
+//    displayProgress()
     }
 
     override var representedObject: AnyObject? {
@@ -77,8 +87,23 @@ class ViewController: NSViewController {
     }
     
     //display alert sheet to save modified storyboards
+    func displayProgress() {
+        self.view.addSubview(self.progressController.view)
+        
+        self.progressController.startAnimating()
+    }
+
+    //MARK: - DragDropImageViewDelegate Method
     
-
-
+    func dragDropImageViewDidReceiveFiles(files: [String]) {
+        if files.count > 0 {
+            dispatch_async(dispatch_get_main_queue()) { [unowned self] in
+                self.displayProgress()
+            }
+            
+        } else {
+            //display error
+        }
+    }
 }
 

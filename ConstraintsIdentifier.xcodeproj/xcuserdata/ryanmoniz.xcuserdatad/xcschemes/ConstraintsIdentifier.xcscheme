@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5277796B1BEDB92E009D39A5"
-               BuildableName = "ConstraintsIdentifier.app"
+               BuildableName = "Constraints Identifier Generator.app"
                BlueprintName = "ConstraintsIdentifier"
                ReferencedContainer = "container:ConstraintsIdentifier.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5277796B1BEDB92E009D39A5"
-            BuildableName = "ConstraintsIdentifier.app"
+            BuildableName = "Constraints Identifier Generator.app"
             BlueprintName = "ConstraintsIdentifier"
             ReferencedContainer = "container:ConstraintsIdentifier.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5277796B1BEDB92E009D39A5"
-            BuildableName = "ConstraintsIdentifier.app"
+            BuildableName = "Constraints Identifier Generator.app"
             BlueprintName = "ConstraintsIdentifier"
             ReferencedContainer = "container:ConstraintsIdentifier.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5277796B1BEDB92E009D39A5"
-            BuildableName = "ConstraintsIdentifier.app"
+            BuildableName = "Constraints Identifier Generator.app"
             BlueprintName = "ConstraintsIdentifier"
             ReferencedContainer = "container:ConstraintsIdentifier.xcodeproj">
          </BuildableReference>

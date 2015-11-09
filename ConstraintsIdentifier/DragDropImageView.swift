@@ -10,10 +10,16 @@ import AppKit
 
 let PrivateDragUTI = "com.mobilefirst.ibm.constraintsidentifier.cocoadraganddrop"
 
+protocol DragDropImageViewDelegate {
+    func dragDropImageViewDidReceiveFiles(files: [String])
+}
+
 class DragDropImageView: NSImageView, NSDraggingSource {
     
     var highlightDropZone: Bool
     var sourceFilenameString: [String] = [String]()
+    
+    var delegate: DragDropImageViewDelegate?
     
     //Init method called for Interface Builder objects
     required init?(coder: NSCoder) {
@@ -93,6 +99,7 @@ class DragDropImageView: NSImageView, NSDraggingSource {
             // Add the filenames to the datasource
             sourceFilenameString = files
             
+            delegate?.dragDropImageViewDidReceiveFiles(self.sourceFilenameString)
             
             // Update the view
             self.needsDisplay = true
