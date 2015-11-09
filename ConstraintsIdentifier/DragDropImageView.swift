@@ -17,6 +17,7 @@ protocol DragDropImageViewDelegate {
 class DragDropImageView: NSImageView, NSDraggingSource {
     
     var highlightDropZone: Bool
+    var dragDropEnabled: Bool
     var sourceFilenameString: [String] = [String]()
     
     var delegate: DragDropImageViewDelegate?
@@ -24,6 +25,7 @@ class DragDropImageView: NSImageView, NSDraggingSource {
     //Init method called for Interface Builder objects
     required init?(coder: NSCoder) {
         self.highlightDropZone = false
+        self.dragDropEnabled = true
         
         super.init(coder: coder)
 
@@ -79,6 +81,10 @@ class DragDropImageView: NSImageView, NSDraggingSource {
         highlightDropZone = false
         
         self.setNeedsDisplay()
+        
+        if self.dragDropEnabled == false {
+            return false
+        }
         
         //check to see if we can accept the data
         if pboard.availableTypeFromArray([NSFilenamesPboardType]) == NSFilenamesPboardType {
