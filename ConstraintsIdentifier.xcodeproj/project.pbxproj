@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52085FC41BF021FF00024BFC /* DragDropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52085FC31BF021FF00024BFC /* DragDropImageView.swift */; };
+		52085FC61BF05BE300024BFC /* SWActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52085FC51BF05BE300024BFC /* SWActivityIndicatorView.swift */; };
 		527779701BEDB92E009D39A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277796F1BEDB92E009D39A5 /* AppDelegate.swift */; };
 		527779721BEDB92E009D39A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527779711BEDB92E009D39A5 /* ViewController.swift */; };
 		527779741BEDB92E009D39A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527779731BEDB92E009D39A5 /* Assets.xcassets */; };
 		527779771BEDB92E009D39A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527779751BEDB92E009D39A5 /* Main.storyboard */; };
 		527779821BEDB92E009D39A5 /* ConstraintsIdentifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527779811BEDB92E009D39A5 /* ConstraintsIdentifierTests.swift */; };
 		5277798D1BEDB92E009D39A5 /* ConstraintsIdentifierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277798C1BEDB92E009D39A5 /* ConstraintsIdentifierUITests.swift */; };
+		5277799B1BEDB94D009D39A5 /* AEXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277799A1BEDB94D009D39A5 /* AEXML.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5277796C1BEDB92E009D39A5 /* ConstraintsIdentifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstraintsIdentifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52085FC31BF021FF00024BFC /* DragDropImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragDropImageView.swift; sourceTree = "<group>"; };
+		52085FC51BF05BE300024BFC /* SWActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWActivityIndicatorView.swift; sourceTree = "<group>"; };
+		5277796C1BEDB92E009D39A5 /* Constraints Identifier Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Constraints Identifier Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5277796F1BEDB92E009D39A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		527779711BEDB92E009D39A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		527779731BEDB92E009D39A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +50,7 @@
 		527779881BEDB92E009D39A5 /* ConstraintsIdentifierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstraintsIdentifierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5277798C1BEDB92E009D39A5 /* ConstraintsIdentifierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsIdentifierUITests.swift; sourceTree = "<group>"; };
 		5277798E1BEDB92E009D39A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5277799A1BEDB94D009D39A5 /* AEXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEXML.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52085FC71BF05BE800024BFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52085FC31BF021FF00024BFC /* DragDropImageView.swift */,
+				52085FC51BF05BE300024BFC /* SWActivityIndicatorView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		527779631BEDB92E009D39A5 = {
 			isa = PBXGroup;
 			children = (
@@ -85,7 +100,7 @@
 		5277796D1BEDB92E009D39A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5277796C1BEDB92E009D39A5 /* ConstraintsIdentifier.app */,
+				5277796C1BEDB92E009D39A5 /* Constraints Identifier Generator.app */,
 				5277797D1BEDB92E009D39A5 /* ConstraintsIdentifierTests.xctest */,
 				527779881BEDB92E009D39A5 /* ConstraintsIdentifierUITests.xctest */,
 			);
@@ -95,8 +110,10 @@
 		5277796E1BEDB92E009D39A5 /* ConstraintsIdentifier */ = {
 			isa = PBXGroup;
 			children = (
+				5277799C1BEDB950009D39A5 /* AEXML */,
 				5277796F1BEDB92E009D39A5 /* AppDelegate.swift */,
 				527779711BEDB92E009D39A5 /* ViewController.swift */,
+				52085FC71BF05BE800024BFC /* Views */,
 				527779731BEDB92E009D39A5 /* Assets.xcassets */,
 				527779751BEDB92E009D39A5 /* Main.storyboard */,
 				527779781BEDB92E009D39A5 /* Info.plist */,
@@ -122,6 +139,14 @@
 			path = ConstraintsIdentifierUITests;
 			sourceTree = "<group>";
 		};
+		5277799C1BEDB950009D39A5 /* AEXML */ = {
+			isa = PBXGroup;
+			children = (
+				5277799A1BEDB94D009D39A5 /* AEXML.swift */,
+			);
+			name = AEXML;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,7 +164,7 @@
 			);
 			name = ConstraintsIdentifier;
 			productName = ConstraintsIdentifier;
-			productReference = 5277796C1BEDB92E009D39A5 /* ConstraintsIdentifier.app */;
+			productReference = 5277796C1BEDB92E009D39A5 /* Constraints Identifier Generator.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5277797C1BEDB92E009D39A5 /* ConstraintsIdentifierTests */ = {
@@ -253,7 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				527779721BEDB92E009D39A5 /* ViewController.swift in Sources */,
+				5277799B1BEDB94D009D39A5 /* AEXML.swift in Sources */,
 				527779701BEDB92E009D39A5 /* AppDelegate.swift in Sources */,
+				52085FC41BF021FF00024BFC /* DragDropImageView.swift in Sources */,
+				52085FC61BF05BE300024BFC /* SWActivityIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +416,7 @@
 				INFOPLIST_FILE = ConstraintsIdentifier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.mobilefirst.ConstraintsIdentifier;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Constraints Identifier Generator";
 			};
 			name = Debug;
 		};
@@ -400,7 +428,7 @@
 				INFOPLIST_FILE = ConstraintsIdentifier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.mobilefirst.ConstraintsIdentifier;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Constraints Identifier Generator";
 			};
 			name = Release;
 		};
@@ -475,6 +503,7 @@
 				527779931BEDB92E009D39A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		527779941BEDB92E009D39A5 /* Build configuration list for PBXNativeTarget "ConstraintsIdentifierTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +512,7 @@
 				527779961BEDB92E009D39A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		527779971BEDB92E009D39A5 /* Build configuration list for PBXNativeTarget "ConstraintsIdentifierUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +521,7 @@
 				527779991BEDB92E009D39A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
